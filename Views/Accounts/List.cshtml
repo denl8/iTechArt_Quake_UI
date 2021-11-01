@@ -1,0 +1,24 @@
+﻿@using iTechArt_Quake_UI.Data.Models;
+@model IEnumerable<Account>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>List</title>
+</head>
+<body>
+    <h2>Все Аккаунты</h2>
+    @{
+        foreach(var acc in Model){
+            <div>
+                <h2>Аккаунт: @acc.Email</h2>
+            </div>
+        };
+    }
+</body>
+</html>
